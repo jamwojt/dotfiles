@@ -1,0 +1,12 @@
+font-family = "Hack Nerd Font"
+font-size = 12
+
+# simulate night owl theme
+background = #011627
+foreground = #D6DEEB
+selection-invert-fg-bg = true
+cursor-color = #80A4C2
+
+window-decoration = false
+mouse-hide-while-typing = true
+
