@@ -5,6 +5,7 @@
 add_newline = true
 
 format = """
+$python\
 $username\
 $hostname\
 $directory\
@@ -42,13 +43,5 @@ disabled = false
 only_nonzero_diffs = false
 format = '\[([+$added]($added_style))|([-$deleted]($deleted_style))\]'
 
-[conda]
-ignore_base = false
-format = '\[[$environment]($style)\] '
-
-[nix_shell]
-disabled = false
-impure_msg = '[impure shell](bold red)'
-pure_msg = '[pure shell](bold green)'
-unknown_msg = '[unknown shell](bold yellow)'
-format = 'via [$state( \($name\))](bold blue) '
+[python]
+format = '\[$virtualenv\] '
