@@ -51,6 +51,10 @@ return {
 							    "RUF",
 							    "TRY",
 							},
+                            ignore = {
+                                "D100",
+                                "D4"
+                            },
 						},
 						format = {
 							quouteStyle = "double",
