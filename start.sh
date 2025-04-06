@@ -1,9 +1,7 @@
-#!/bin/bash
-
 # ghostty and nvim
-dnf copr enable pgdev/ghostty
-dnf install ghostty
-dnf install nvim
+# dnf copr enable pgdev/ghostty
+# dnf install ghostty
+# dnf install nvim
 
 # install uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
@@ -12,7 +10,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 curl -sS https://starship.rs/install.sh | sh
 
 # clone dotfiles and link them to .config
-git clone https://github.com/jamwojt/dotfiles ~
+# git clone https://github.com/jamwojt/dotfiles ~
 
 rm -r ~/.config/ghostty
 ln -s ~/dotfiles/.config/ghostty/ ~/.config/ghostty
