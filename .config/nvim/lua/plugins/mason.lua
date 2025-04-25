@@ -28,8 +28,13 @@ return {
 
             lspConfig.lua_ls.setup({ capabilities = capabilities })
 
-            lspConfig.ruff.setup({
+            lspConfig.pyright.setup({
                 capabilities = capabilities,
+
+            })
+
+            lspConfig.ruff.setup({
+                -- capabilities = capabilities,
                 init_options = {
                     settings = {
                         lineLength = 88,

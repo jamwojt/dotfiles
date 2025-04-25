@@ -3,6 +3,7 @@ return {
     vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {}),
     vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {}),
     vim.keymap.set("n", "<leader>fm", vim.lsp.buf.format, {}),
+    vim.keymap.set("n", "<leader>ld", function() vim.diagnostic.open_float() end),
 
     vim.keymap.set("n", "<leader>nh", ":noh<CR>", {}),
 

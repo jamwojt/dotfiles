@@ -10,6 +10,22 @@ vim.opt.relativenumber = true
 vim.opt.number = true
 vim.opt.signcolumn = "yes"
 
+vim.diagnostic.config({
+    virtual_text = true,  -- Inline diagnostics
+    signs = true,         -- Gutter signs
+    underline = true,     -- Underline issues
+    update_in_insert = true,
+    severity_sort = true,
+})
+
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
+  vim.lsp.handlers.hover,
+  {
+    border = "rounded",
+    focusable = true,
+  }
+)
+
 vim.o.guifont = "Hack Nerd Font"
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
