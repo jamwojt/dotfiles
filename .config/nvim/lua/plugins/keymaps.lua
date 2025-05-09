@@ -18,5 +18,8 @@ return {
     vim.keymap.set("n", "<C-k>", ":wincmd k<CR>"),
     vim.keymap.set("n", "<C-l>", ":wincmd l<CR>"),
 
-    vim.keymap.set("n", "<leader>te", ":lua MiniFiles.open(nil, false)<CR>", {})
+    vim.keymap.set("n", "<leader>te", ":lua MiniFiles.open(nil, false)<CR>", {}),
+    vim.keymap.set("n", "<leader>v", ":TypstPreview<CR>", {}),
+
+    vim.keymap.set("n", "<leader>sp", ":Scratch<CR>", {})
 }

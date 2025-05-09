@@ -82,6 +82,18 @@ return {
                     },
                 },
             })
+
+            lspConfig.tinymist.setup({
+                capabilities = capabilities,
+                settings ={
+                    formatterMode = "typstyle",
+                    exportPdf = "never"
+                }
+            })
+
+            lspConfig.rust_analyzer.setup({
+                capabilities = capabilities
+            })
         end,
     },
 }
