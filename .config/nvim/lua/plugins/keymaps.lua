@@ -1,5 +1,5 @@
 return {
-    vim.keymap.set("n", "K",function() vim.lsp.buf.hover({border = "single"}) end, {}),
+    vim.keymap.set("n", "K", function() vim.lsp.buf.hover({ border = "single" }) end, {}),
     vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {}),
     vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {}),
     vim.keymap.set("n", "<leader>fm", vim.lsp.buf.format, {}),
@@ -21,5 +21,8 @@ return {
     vim.keymap.set("n", "<leader>te", ":lua MiniFiles.open(nil, false)<CR>", {}),
     vim.keymap.set("n", "<leader>v", ":TypstPreview<CR>", {}),
 
-    vim.keymap.set("n", "<leader>sp", ":Scratch<CR>", {})
+    vim.keymap.set("n", "<leader>sp", ":Scratch<CR>", {}),
+
+    vim.keymap.set("n", "<leader>hp", ":Gitsigns preview_hunk<CR>", {}),
+    vim.keymap.set("n", "<leader>hr", ":Gitsigns reset_hunk<CR>", {})
 }
