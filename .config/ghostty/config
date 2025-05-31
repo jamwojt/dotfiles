@@ -9,3 +9,5 @@ cursor-color = #80A4C2
 
 window-decoration = false
 mouse-hide-while-typing = true
+
+keybind = alt+f=text:~/dotfiles/scripts/tmux-sessionizer.sh\n
