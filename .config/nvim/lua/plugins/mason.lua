@@ -9,7 +9,7 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls" },
+				ensure_installed = { "lua_ls", "pyright", "ruff" },
 			})
 		end,
 		{
@@ -68,18 +68,18 @@ return {
 					},
 				})
 
-				-- lspConfig.gopls.setup({
-				--     capabilities = capabilities,
-				--     settings = {
-				--         gopls = {
-				--             analyses = {
-				--                 unusedparams = true,
-				--             },
-				--             staticcheck = true,
-				--             gofumpt = true,
-				--         },
-				--     },
-				-- })
+				lspConfig.gopls.setup({
+				    capabilities = capabilities,
+				    settings = {
+				        gopls = {
+				            analyses = {
+				                unusedparams = true,
+				            },
+				            staticcheck = true,
+				            gofumpt = true,
+				        },
+				    },
+				})
 
 				lspConfig.tinymist.setup({
 					capabilities = capabilities,
