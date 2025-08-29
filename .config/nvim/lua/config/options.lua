@@ -12,8 +12,7 @@ vim.opt.number = true
 vim.opt.signcolumn = "yes"
 
 vim.diagnostic.config({
-    virtual_text = true,
-    virtual_line = true,
+    virtual_text = true, -- Inline diagnostics
     signs = true,        -- Gutter signs
     underline = true,    -- Underline issues
     update_in_insert = true,
