@@ -10,3 +10,13 @@ vim.g.mapleader = " "
 vim.opt.relativenumber = true
 vim.opt.number = true
 vim.opt.signcolumn = "yes"
+
+vim.diagnostic.config({
+    virtual_text = true,
+    virtual_line = true,
+    signs = true,        -- Gutter signs
+    underline = true,    -- Underline issues
+    update_in_insert = true,
+    severity_sort = true,
+    float = { border = "single" }
+})

@@ -1,5 +1,7 @@
 vim.lsp.enable({
-    "lua_ls"
+    "lua_ls",
+    "gopls",
+    "pyright"
 })
 
 vim.diagnostic.config({

@@ -6,11 +6,9 @@ return {
 		dependencies = { "nvim-lua/plenary.nvim" },
 		defaults = {
 			mappings = {
-				n = {
-					["U"] = function()
-                        print("pressed the delete combo")
-                    end
-				},
+                i = {
+                    ["<C-q>"] = "smart_send_to_qflist"
+                }
 			},
 		},
 		config = function()
@@ -21,9 +19,6 @@ return {
 			vim.keymap.set("n", "<Leader>fp", builtin.diagnostics, {})
 			vim.keymap.set("n", "<Leader>ft", builtin.treesitter, {})
 			vim.keymap.set("n", "<Leader>fr", builtin.registers, {})
-			vim.keymap.set("n", "<Leader>ob", builtin.buffers, {})
-			vim.keymap.set({ "n", "v" }, "<Leader>fs", builtin.grep_string, {})
-			vim.keymap.set({ "n", "v" }, "<Leader>fh", builtin.highlights, {})
 		end,
 	},
 	{
