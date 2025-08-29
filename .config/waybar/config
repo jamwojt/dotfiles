@@ -1,31 +1,9 @@
 {
     "layer": "bottom", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 25, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
-    // Choose the order of the modules
     "modules-left": ["hyprland/workspaces", "hyprland/mode", "hyprland/scratchpad", "custom/media"],
-    "modules-center": [],
-    //"modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "battery#bat2", "clock", "tray"],
-    "modules-right": ["pulseaudio", "cpu", "memory","network", "backlight", "battery", "battery#bat2", "tray", "clock"],
-    // Modules configuration
-    // "hyprland/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
+    "modules-right": ["pulseaudio", "cpu", "memory","network", "battery", "battery#bat2", "tray", "clock"],
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -46,7 +24,6 @@
         "tooltip-format": "{app}: {title}"
     },
     "mpd": {
-//        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
         "format": "  {title} - {artist} {stateIcon} [{elapsedTime:%M:%S}/{totalTime:%M:%S}] {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}[{songPosition}/{queueLength}] [{volume}%]",
         "format-disconnected": " Disconnected",
         "format-stopped": " {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped",
@@ -132,12 +109,12 @@
             "critical": 15
         },
         "format": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
+        "format-charging": "C {capacity}%",
+        "format-plugged": "P {capacity}%",
         "format-alt": "{icon} {time}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        // "format-icons": ["", "", "", "", ""]
     },
     "battery#bat2": {
         "bat": "BAT2"
