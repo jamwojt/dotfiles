@@ -97,6 +97,11 @@ return {
                 lspConfig.rust_analyzer.setup({
                     capabilities = capabilities,
                 })
+
+                lspConfig.elmls.setup({
+                    cmd = { vim.fn.expand("~/.local/share/nvim/mason/bin/elm-language-server")},
+                    capabilities = capabilities
+                })
             end,
         },
     },
