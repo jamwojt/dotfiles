@@ -18,6 +18,11 @@ return {
                     }),
                 },
                 null_ls.builtins.formatting.gofmt,
+                null_ls.builtins.formatting.elm_format.with({
+                    extra_args = {
+                        "src/"
+                    }
+                }),
                 update_in_insert = false,
             })
         end,
