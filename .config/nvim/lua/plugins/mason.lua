@@ -102,6 +102,11 @@ return {
                     cmd = { vim.fn.expand("~/.local/share/nvim/mason/bin/elm-language-server")},
                     capabilities = capabilities
                 })
+
+                lspConfig.elixirls.setup({
+                    cmd = {vim.fn.expand("~/.local/share/nvim/mason/bin/elixir-ls")},
+                    capabilities = capabilities
+                })
             end,
         },
     },
