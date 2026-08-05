@@ -10,7 +10,7 @@ end
 vim.pack.add({
 	gh("oxfist/night-owl.nvim"),
 	gh("nvim-lua/plenary.nvim"),
-	gh("nvim-telescope/telescope.nvim"),
+	gh("dmtrKovalenko/fff.nvim"),
 	gh("mason-org/mason.nvim"),
 	gh("neovim/nvim-lspconfig"),
 	gh("rafamadriz/friendly-snippets"),
@@ -30,7 +30,7 @@ vim.pack.add({
 -- require plugin setup files
 require("plugins.mason")
 require("plugins.night_owl")
-require("plugins.telescope")
+require("plugins.fff")
 require("plugins.blink")
 require("plugins.indent-blankline")
 require("plugins.lualine")
