@@ -25,6 +25,7 @@ vim.pack.add({
 	gh("christoomey/vim-tmux-navigator"),
 	gh("chomosuke/typst-preview.nvim"),
 	gh("nvimtools/none-ls.nvim"),
+    gh("immanuwell/droast.nvim"),
 })
 
 -- require plugin setup files
@@ -38,6 +39,7 @@ require("plugins.mini-pairs")
 require("plugins.vim-tmux-navigator")
 require("plugins.typst-preview")
 require("plugins.none-ls")
+require("plugins.droast")
 
 -- require lsp files
 require("lsp.lua_ls")

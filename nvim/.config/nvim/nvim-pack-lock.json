@@ -4,6 +4,10 @@
       "rev": "456d38d1cd3743926f329204c2340f3e7840aad6",
       "src": "https://github.com/saghen/blink.cmp"
     },
+    "droast.nvim": {
+      "rev": "06fafb1e81a52f8f56b82025873c9d907a9b98c5",
+      "src": "https://github.com/immanuwell/droast.nvim"
+    },
     "fff.nvim": {
       "rev": "073698c8e7dad9f6106d23ef588f5ebc7f98b326",
       "src": "https://github.com/dmtrKovalenko/fff.nvim"

@@ -31,7 +31,7 @@ if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
     tmux select-window -t "$selected_name:1"
 
     # Run nvim in window 1
-    tmux send-keys -t "$selected_name:1" "nvim" C-m
+    tmux send-keys -t "$selected_name:1" "vim" C-m
 
     # Attach to the session
     tmux attach-session -t "$selected_name"
